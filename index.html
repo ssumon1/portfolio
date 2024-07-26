@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href=
+"https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+<title>Personal Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/sumon-high-resolution-logo-white-transparent.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-circle" onclick="closeMenu()"></i> -->
+                    <ion-icon name="close-circle-outline" onclick="closeMenu()"></ion-icon>
+
+                </ul>
+                <!-- <i class="fa-solid fa-bars" onclick="openMenu()"></i> -->
+                <ion-icon name="menu-outline" onclick="openMenu()"></ion-icon>
+            </nav>
+            <div class="aboutContainer">
+                <div class="header-text">
+                    <p>Hello, my name is</p>
+                    <h1><span>Sumon Ahasan</span></h1>
+                    <p id="about">
+                        I am a junior at Stony Brook University, double majoring<br>
+                        in Computer Science and Applied Mathematics & Statistics.<br> 
+                        I am actively seeking opportunities to leverage my technical<br> 
+                        and analytical skills in software development, data science,<br>
+                        and related fields.</p>
+                </div>
+                <img src="images/me.jpeg" class="headshot">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="fill">
+        <img src="images/quote.jpg">
+    </div> -->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="schools">
+                <img src="images/sbulogo.png" id="sbu" onclick="togglesbuPop()">
+                <div class="popup" id="sbuPop">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1 class="tinos-bold">Stony Brook University</h1>
+                        <p class="tinos-regular-italic">Backelor of Science: Double Major in Computer Science 
+                            and Applied Mathematics & Statistics <span class="tinos-regular-italic" style="float:right;">May 2026</span></p><br><br>
+                        <p class="tinos-regular">Awards: Dean's List, Presidential Scholarship Recipient</p><br>
+                        <p class="tinos-regular">Relevant Coursework: Data Structures and Algorithms, 
+                            Software Development, Programming Abstractions, Assembly Programming
+                             and Computer Architecture, Object-Oriented Programming </p><br>
+                        <p class="tinos-regular">Activities and Societies: Stony Brook Computing Society (SBCS), 
+                            Women in Computer Science (WiCS), Photography Club, Muslim Student Association (MSA)</p><br>
+                        <button type="button" class="btn" onclick="togglesbuPop()">X</button>
+                    </div>
+                </div>
+                <img src="images/latinlogo.png" id="latin" onclick="togglelatinPop()">
+                <div class="popup" id="latinPop">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1 class="tinos-bold">Brooklyn Latin High School</h1>
+                        <p class="tinos-regular-italic">International Baccalaureate Diploma, Adanced Regents Diploma 
+                            <span class="tinos-regular-italic" style="float:right;">May 2022</span></p><br><br>
+                            <p class="tinos-regular">Awards: Approbation Award (2022), Questbridge National Match Finalist (2021), MAXIMA CUM LAUDE (National Latin Exam 2021),
+                                AMC 10A Math Award 3rd Place in Brooklyn Latin (2020)</p><br>
+                        <p class="tinos-regular"> GPA: 4.0, Ranked Top 10% of Graduating Class </p><br>
+                        <p class="tinos-regular"> Coursework: 2 years of High School Cirriculum followed by 2 years of IB progamme </p><br>
+                        <p class="tinos-regular">Leadership: Track Team (Captain), Student Senate (Tribune)</p><br>
+                        <button type="button" class="btn" onclick="togglelatinPop()">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <p>to be added soon</p>
+        </div>
+    </div>
+    <div id="experience">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="timeline animate">
+        <div class="container left-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>Headstarter AI</h2>
+                <h4>Software Engineer Fellow</h4>
+                <small>Jul 2024 - Present</small>
+                <br><br>
+                <p>- Designed and executed a comprehensive digital marketing strategy, 
+                    leveraging social media platforms, content marketing, and community 
+                    outreach to drive user sign-ups and account creations </p>
+                <p>- Successfully onboarded 1,000 users to the project's waitlist, 
+                    showcasing proficiency in user acquisition and engagement strategies</p>
+                <p>- Completed five AI projects, utilizing Next.JS, OpenAI, Pinecone, 
+                    StripeAPI with 98% accuracy, gaining hands-on experience in cutting-edge 
+                    technologies and rapid prototyping</p>
+                    <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>Kazani Beauty</h2>
+                <h4>Digital Marketing Analyst Intern</h4>
+                <small>Jun 2024 - Present </small>
+                <br><br>
+                <p>- Analyzed business trends and market data to identify growth 
+                    opportunities and inform strategic decisions, leading to a 15% 
+                    increase in customer acquisition </p>
+                <p>- Produced engaging social media posts and monitored platform 
+                    analytics to boost brand visibility and engagement, achieving a 25% in follower growth</p>
+                <p>- Utilized WordPress and WooCommerce to manage and optimize the 
+                    company’s online shop, improving user experience and increasing sales
+                    by 25%</p>
+                    <span class="right-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>Stony Brook Division of Information Technology</h2>
+                <h4>IT Student Technician</h4>
+                <small>Jan 2024 - Present</small>
+                <br><br>
+                <p>- Streamline Learning Management System usage (Brightspace, Echo360, 
+                    Digication, Respondus Lockdown Browser) through targeted training sessions
+                     for over 25,000 faculty and students, increasing adoption by 20% </p>
+                <p>- Efficiently resolve 10+ technical issues a week using TeamDynamix, 
+                    with an average resolution time of less than 24 hours</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>Stony Brook Vertically Integrated Projects(VIP): Integrating Population Health Informatics</h2>
+                <h4>Computer Programmer & Data Analyst</h4>
+                <small>May 2023 - May 2024</small>
+                <br><br>
+                <p>- Explored and visualized health data using Python and Tableau to create 
+                    interactive dashboards that displayed key insights on population health trends, 
+                    leading to the successful implementation of preventive measures for high-risk groups. </p>
+                <p>- Presented research at the 2024 Stony Brook URECA Symposium, engaging with an audience 
+                    of over 200 attendees and receiving positive feedback from a panel of 10 judges</p>
+                <p>- Utilizes: Python, Tableau, Geo-Mapping, Databases (ArcGIS, TriNetx), Data-Source Analysis</p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>NYC DOE Office of Food & Nutrition Services</h2>
+                <h4>Kitchen Aide</h4>
+                <small>Jun 2022 - Aug 2022</small>
+                <br><br>
+                <p>- Developed kitchen skills such as kitchen management, food safety, food preparation, etc.</p>
+                <p>- Communicated with other chefs to ensure all tasks were completed in a safe and sanitary matter</p>
+                <p>- Facilitated heavy duty tasks such as lifting and loading supplies, cleaning, etc.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>Mamuns Tutorial</h2>
+                <h4>Senior Tutor</h4>
+                <small>Jul 2018 - Jul 2022</small>
+                <br><br>
+                <p>- Provided personalized tutoring sessions using tailored curriculum and materials,
+                     resulting in a 25% increase in subject comprehension and confidence among students.</p>
+                <p>- Regularly assessed and tracked student progress through quizzes, tests, and feedback sessions,
+                     adjusting teaching methods to better suit learning needs</p>
+                     <span class="right-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <div class="dots"></div>
+            <div class="text-box">
+                <h2>New York City Medical Forum</h2>
+                <h4>Webmaster</h4>
+                <small>Nov 2020 - Jun 2022</small>
+                <br><br>
+                <p>- Conceptualized, planned, and executed original designs for wide range of website properties.</p>
+                <p>- Configured and purchased domains for websites.</p>
+                <p>- Managed and troubleshoot issues with website, being used by over 1000 times.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <div class="buttoncenter"><button type="submit" class="btn">Submit</button></div>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="text-align: left;">Copyright © Made by Sumon Ahasan
+        <span style="float: right;">
+        <a href="mailto:sumonahasan25@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/sumon-ahasan-98374a21b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </span>
+        </p>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPnUEwSIQP9VBvIrVcmy1RdsK4fvYFoDA_1KGVdQDWygvDiy-o2MU2v7PC4fMg77sCLA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function() {
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
