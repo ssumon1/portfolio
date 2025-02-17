@@ -231,15 +231,64 @@ nav ul li a:hover::after {
 
 #projects {
     background-color: #272727;
-    padding:30px;
+    padding:50px 0;
     text-align: center;
-
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project {
+    border-radius: 10px;
+    position: 10px;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+/* .project_layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height  0.5s;
+} */
+.project h3 {
+    color: #ff004f;
+    margin-top: 15px;
+}
+.project_layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.project:hover img{
+    transform:scale(1.1) ;
+    border-radius: 10px;
+    border-color: #ff004f;
+    cursor:pointer;
+}
+.project:hover .project_layer {
+    height: 100%;
+    cursor:pointer;
 }
 
 /* Experience */
-#experience {
-    /* background-color: #2e364a; */
-}
+/* #experience {
+    
+} */
 .timeline {
     position:relative;
     max-width: 1200px;
